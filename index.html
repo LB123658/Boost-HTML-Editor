@@ -14,12 +14,14 @@ width: 50%;
 height: 700px;
 background: #282828;
 color: #1DB954;
+font-famiky: courier new;
+font-weight: bold;
 }
 #run {
 position: absolute;
 top: 60px;
-left: 40%;
-width: 10%;
+left: 0%;
+width: 15%;
 height: 40px;
 border: none;
 color: white;
@@ -33,11 +35,11 @@ cursor: pointer;
 color: white;
 background: #b6040c;
 }
-#download {
+#default {
 position: absolute;
 top: 60px;
-left: 30%;
-width: 10%;
+left: 15%;
+width: 15%;
 height: 40px;
 border: none;
 color: white;
@@ -47,15 +49,15 @@ font-size: 15px;
 font-family: futura;
 cursor: pointer;
 }
-#download:hover {
+#default:hover {
 color: white;
 background: #b6040c;
 }
-#save {
+#wide {
 position: absolute;
 top: 60px;
-left: 20%;
-width: 10%;
+left: 30%;
+width: 20.5%;
 height: 40px;
 border: none;
 color: white;
@@ -65,7 +67,7 @@ font-size: 15px;
 font-family: futura;
 cursor: pointer;
 }
-#save:hover {
+#wide:hover {
 color: white;
 background: #b6040c;
 }
@@ -73,11 +75,15 @@ background: #b6040c;
 position: absolute;
 top: 100px;
 left: 52%;
+z-index: 1;
+width: 50%;
 }
 </style>
 </head>
 <body>
 <button id="run" onclick="save()">Run code</button>
+<button id="wide" onclick="wide()">Wide view</button>
+<button id="default" onclick="deafult()">Editing view</button>
 
 
 <textarea id="editor" placeholder="Write HTML here...">
@@ -86,13 +92,23 @@ left: 52%;
 <p id="z"></p>
 <script>
 function save() { 
-            var x =  
+var x =  
             document.getElementById("editor").value; 
             
             document.getElementById( 
               "z").innerHTML = x; 
         } 
-        
+
+function wide() { 
+     document.getElementById("editor").style.visibility="hidden";
+     document.getElementById("z").style.width="100%"; 
+     document.getElementById("z").style.left="0px"; 
+}
+function deafault() { 
+     document.getElementById("editor").style.visibility="visible";
+     document.getElementById("z").style.width="50%"; 
+     document.getElementById("z").style.left="52%"; 
+}
 </script>
 </body>
 </html>
