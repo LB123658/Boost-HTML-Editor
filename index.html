@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boost HTML Editor</title>
 <style>
 body {
 background: white;
@@ -78,20 +79,33 @@ left: 52%;
 z-index: 1;
 width: 50%;
 }
+#title {
+position: absolute;
+top: 0px;
+left: 0px;
+font-family: futura;
+color: #FF0000;
+font-weight: bold;
+font-size: 25px;
+cursor: default;
+}
+#haha {
+font-style: italic;
+}
 </style>
 </head>
 <body>
-<button id="run" onclick="save()">Run code</button>
-<button id="wide" onclick="wide()">Wide view</button>
-<button id="default" onclick="deafult()">Editing view</button>
+<button id="run" onclick="hjgcghjkhgfg()">Run code</button>
+<button id="wide" onclick="kajygbxkjyw()">Wide view</button>
+<button id="default" onclick="kjybxdykwuydsbxryuwkeuy()">Editing view</button>
 
 
 <textarea id="editor" placeholder="Write HTML here...">
 </textarea>
-
+<p id="title"><span id="haha">Boost</span> HTML Editor</p>
 <p id="z"></p>
 <script>
-function save() { 
+function hjgcghjkhgfg() { 
 var x =  
             document.getElementById("editor").value; 
             
@@ -99,12 +113,12 @@ var x =
               "z").innerHTML = x; 
         } 
 
-function wide() { 
+function kajygbxkjyw() { 
      document.getElementById("editor").style.visibility="hidden";
      document.getElementById("z").style.width="100%"; 
      document.getElementById("z").style.left="0px"; 
 }
-function deafault() { 
+function kjybxdykwuydsbxryuwkeuy() { 
      document.getElementById("editor").style.visibility="visible";
      document.getElementById("z").style.width="50%"; 
      document.getElementById("z").style.left="52%"; 
