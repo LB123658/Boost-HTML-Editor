@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+background: white;
+}
+#editor {
+position: absolute;
+top: 100px;
+left: 0px;
+width: 50%;
+height: 700px;
+background: #282828;
+color: #1DB954;
+}
+#run {
+position: absolute;
+top: 60px;
+left: 40%;
+width: 10%;
+height: 40px;
+border: none;
+color: white;
+border-radius: 1px;
+background: #FF0000;
+font-size: 15px;
+font-family: futura;
+cursor: pointer;
+}
+#run:hover {
+color: white;
+background: #b6040c;
+}
+#download {
+position: absolute;
+top: 60px;
+left: 30%;
+width: 10%;
+height: 40px;
+border: none;
+color: white;
+border-radius: 1px;
+background: #FF0000;
+font-size: 15px;
+font-family: futura;
+cursor: pointer;
+}
+#download:hover {
+color: white;
+background: #b6040c;
+}
+#save {
+position: absolute;
+top: 60px;
+left: 20%;
+width: 10%;
+height: 40px;
+border: none;
+color: white;
+border-radius: 1px;
+background: #FF0000;
+font-size: 15px;
+font-family: futura;
+cursor: pointer;
+}
+#save:hover {
+color: white;
+background: #b6040c;
+}
+#z {
+position: absolute;
+top: 100px;
+left: 52%;
+}
+</style>
+</head>
+<body>
+<button id="run" onclick="save()">Run code</button>
+
+
+<textarea id="editor" placeholder="Write HTML here...">
+</textarea>
+
+<p id="z"></p>
+<script>
+function save() { 
+            var x =  
+            document.getElementById("editor").value; 
+            
+            document.getElementById( 
+              "z").innerHTML = x; 
+        } 
+        
+</script>
+</body>
+</html>
