@@ -4,103 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Boost HTML Editor</title>
 <link rel='icon' href='https://drive.google.com/thumbnail?id=1_WkY6_JASgRvnWu18iIXxDwmy9asRJN4' type='image/png'/ >
-
-<style>
-body {
-background: white;
-}
-#editor {
-position: absolute;
-top: 100px;
-left: 0px;
-width: 50%;
-height: 700px;
-background: #282828;
-color: #1DB954;
-font-famiky: courier new;
-font-weight: bold;
-}
-#run {
-position: absolute;
-top: 60px;
-left: 0%;
-width: 15%;
-height: 40px;
-border: none;
-color: white;
-border-radius: 1px;
-background: #FF0000;
-font-size: 15px;
-font-family: futura;
-cursor: pointer;
-}
-#run:hover {
-color: white;
-background: #b6040c;
-}
-#default {
-position: absolute;
-top: 60px;
-left: 15%;
-width: 15%;
-height: 40px;
-border: none;
-color: white;
-border-radius: 1px;
-background: #FF0000;
-font-size: 15px;
-font-family: futura;
-cursor: pointer;
-}
-#default:hover {
-color: white;
-background: #b6040c;
-}
-#wide {
-position: absolute;
-top: 60px;
-left: 30%;
-width: 20.5%;
-height: 40px;
-border: none;
-color: white;
-border-radius: 1px;
-background: #FF0000;
-font-size: 15px;
-font-family: futura;
-cursor: pointer;
-}
-#wide:hover {
-color: white;
-background: #b6040c;
-}
-#z {
-position: absolute;
-top: 100px;
-left: 52%;
-z-index: 1;
-width: 50%;
-}
-#title {
-position: absolute;
-top: 0px;
-left: 0px;
-font-family: futura;
-color: #FF0000;
-font-weight: bold;
-font-size: 25px;
-cursor: default;
-}
-#haha {
-font-style: italic;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<button id="run" onclick="hjgcghjkhgfg()">Run code</button>
-<button id="wide" onclick="kajygbxkjyw()">Wide view</button>
-<button id="default" onclick="kjybxdykwuydsbxryuwkeuy()">Editing view</button>
-
+<button id="runnnn" onclick="hjgcghjkhgfg()">Run code</button>
+<button id="widennn" onclick="kajygbxkjyw()">Wide view</button>
+<button id="defaultnnn" onclick="kjybxdykwuydsbxryuwkeuy()">Editing view</button>
+<a href="about.html">
+<button id="sjhdgfmjwdghf">Learn more</button></a>
 
 <textarea id="editor" placeholder="Write HTML here...">
 <!DOCTYPE html>
@@ -118,35 +29,7 @@ font-style: italic;
 </textarea>
 <p id="title"><span id="haha">Boost</span> HTML Editor</p>
 <p id="z"></p>
-<script>
-function hjgcghjkhgfg() { 
-var x =  
-            document.getElementById("editor").value; 
-            
-            document.getElementById( 
-              "z").innerHTML = x; 
-        } 
-
-function kajygbxkjyw() { 
-     document.getElementById("editor").style.visibility="hidden";
-     document.getElementById("z").style.width="100%"; 
-     document.getElementById("z").style.left="0px"; 
-}
-function kjybxdykwuydsbxryuwkeuy() { 
-     document.getElementById("editor").style.visibility="visible";
-     document.getElementById("z").style.width="50%"; 
-     document.getElementById("z").style.left="52%"; 
-}
-</script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-</script>            
+<script src="app.js"></script>
+           
 </body>
 </html>
