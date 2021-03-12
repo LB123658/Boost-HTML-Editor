@@ -7,4 +7,4 @@ Boost HTML Editor supports:
 * CSS
 * JavaScript (only if it is on another page)
 <br>
-`Boost HTML Editor does not support PHP`
+```Boost HTML Editor does not support PHP```
