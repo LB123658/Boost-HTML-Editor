@@ -5,4 +5,6 @@ Edit HTML and create websites.
 Boost HTML Editor supports:
 * HTML
 * CSS
+* JavaScript (only if it is on another page)
 <br>
+`Boost HTML Editor does not support PHP`
