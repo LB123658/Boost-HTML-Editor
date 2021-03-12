@@ -7,3 +7,5 @@ Boost HTML Editor supports:
 * CSS
 * JavaScript (only if it is on another page)
 
+<br>
+Also it can run code over 1 million characters long. 
