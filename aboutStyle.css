@@ -1,0 +1,63 @@
+#title {
+position: absolute;
+top: 0px;
+left: 0px;
+font-family: futura;
+color: #FF0000;
+font-weight: bold;
+font-size: 35px;
+cursor: default;
+}
+#haha {
+font-style: italic;
+}
+#about {
+text-align: justify;
+font-family: arial;
+cursor: default;
+color: grey;
+font-size: 18px;
+width: 40%;
+position: absolute;
+left: 30%;
+}
+#img {
+width: 30%;
+position: absolute;
+left: 0%;
+top: 130px;
+}
+#big {
+position: absolute;
+top: 10px;
+right: 10px;
+height: 50px;
+width: 150px;
+font-size: 25px;
+border-radius: 20px;
+border: 2px solid red;
+background: red;
+color: white;
+cursor: pointer;
+}
+#big:hover {
+background: white;
+color: red;
+}
+#download {
+position: absolute;
+top: 10px;
+right: 170px;
+height: 50px;
+width: 150px;
+font-size: 25px;
+border-radius: 20px;
+border: 2px solid red;
+background: red;
+color: white;
+cursor: pointer;
+}
+#download:hover {
+background: white;
+color: red;
+}
