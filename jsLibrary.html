@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supported JavaScript Functions</title>
+<link rel='icon' href='https://drive.google.com/thumbnail?id=1_WkY6_JASgRvnWu18iIXxDwmy9asRJN4' type='image/png'/ >
+<link rel="stylesheet" type="text/css" href="aboutStyle.css" />
+<style>
+a {
+color: grey;
+text-decoration: none;
+}
+a:hover {
+color: red;
+text-decoration: underline;
+}
+.code {
+font-family: courier new;
+color: lightgrey;
+background: #282828;
+border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<p id="title"><span id="haha">Boost</span> HTML Editor</p><br><br><br><br><br><br>
+<p id="about">Boost HTML Editor now supports limited JavaScript functions including alerts, dark mode, and more. To use a JavaScript alert that says "Welcome", use the function <span class="code">myAlert()</span>. To make a button reload your website, use the function <span class="code">reloadPage()</span>. If you want to allow dark mode in your website use the function <span class="code">darkMode()</span>.<br><br> *IMPORTANT. These functions are stored in the Boost HTML Editor site so you can use them, however, for them to continue working on their own when your site is just an .html file you need to put the following code in for these functions to work. For the function <span class="code">myAlert()</span> you need to put <span class="code">alert("Welcome!");</span> in the section for that function. For the <span class="code">reloadPage()</span> function you need <span class="code">location.reload();</span> written in for it to work. For the <span class="code">darkMode()</span> function you need to give the id <span class="code">"body"</span> to the <span class="code">&#x3C;body&#x3e;</span> tag and ad <span class="code">document.getElementById("body").style.background = "#282828";</span>. <a href="jsExamples.js">Click here for full examples.</a>
+<br><br>
+<a href="index.html">Start using the editor.</a></p>
+
+<a href="index.html">
+<button id="big">Try it out</button></a>   
+<a href="https://github.com/LB123658/Boost-HTML-Editor/archive/main.zip">
+<button id="download">Download</button></a>           
+
+</body>
+</html>
