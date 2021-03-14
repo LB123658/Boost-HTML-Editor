@@ -72,6 +72,7 @@ top: 100px;
 left: 52%;
 z-index: 1;
 width: 50%;
+height: 700px;  
 }
 #title {
 position: absolute;
