@@ -5,7 +5,12 @@
 <title>Boost HTML Editor</title>
 <link rel='icon' href='https://drive.google.com/thumbnail?id=1_WkY6_JASgRvnWu18iIXxDwmy9asRJN4' type='image/png'/ >
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
 <style>
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
 #warn {
 position: absolute;
 left: 52%;
@@ -13,34 +18,212 @@ top: 5px;
 height: 60px;
 width: 48%;           
 }
+body {
+background: white;
+}
+#editor {
+position: absolute;
+top: 100px;
+left: 0px;
+width: 50%;
+height: 700px;
+background: #282828;
+color: #1DB954;
+font-famiky: courier new;
+font-weight: bold;
+}
+#runnnn {
+position: absolute;
+top: 60px;
+left: 0%;
+width: 15%;
+height: 40px;
+border: none;
+color: white;
+border-radius: 1px;
+background: #FF0000;
+font-size: 15px;
+font-family: futura;
+cursor: pointer;
+}
+#runnnn:hover {
+color: white;
+background: #b6040c;
+}
+#defaultnnn {
+position: absolute;
+top: 60px;
+left: 15%;
+width: 15%;
+height: 40px;
+border: none;
+color: white;
+border-radius: 1px;
+background: #FF0000;
+font-size: 15px;
+font-family: futura;
+cursor: pointer;
+}
+#defaultnnn:hover {
+color: white;
+background: #b6040c;
+}
+#widennn {
+position: absolute;
+top: 60px;
+left: 30%;
+width: 15%;
+height: 40px;
+border: none;
+color: white;
+border-radius: 1px;
+background: #FF0000;
+font-size: 15px;
+font-family: futura;
+cursor: pointer;
+}
+#widennn:hover {
+color: white;
+background: #b6040c;
+}
+#z {
+position: absolute;
+top: 100px;
+left: 52%;
+z-index: 1;
+width: 50%;
+height: 700px;  
+}
+#title {
+position: absolute;
+top: 0px;
+left: 0px;
+font-family: futura;
+color: #FF0000;
+font-weight: bold;
+font-size: 25px;
+cursor: default;
+}
+#haha {
+font-style: italic;
+}
+#sjhdgfmjwdghf {
+position: absolute;
+top: 20px;
+right: 50%;
+background: transparent;
+border: 1px solid #FF0000;
+color: #FF0000;
+border-radius: 8px;
+height: 35px;
+cursor: pointer;
+}
+#sjhdgfmjwdghf:hover {
+background: #b6040c;
+color: white;
+border: 1px solid #b6040c;
+}
+#downloadnnn {
+position: absolute;
+top: 60px;
+left: 45%;
+width: 5.5%;
+height: 40px;
+border: none;
+color: white;
+border-radius: 1px;
+background: #FF0000;
+font-size: 15px;
+font-family: futura;
+cursor: pointer;
+}
+#downloadnnn:hover {
+color: white;
+background: #b6040c;
+}
+#r {
+position: fixed;
+top: 4000px;
+right: 10px;
+z-index: 2;
+height: 20px;
+}
+#saveButton {
+position: absolute;
+top: 20px;
+left: 250px;
+background: transparent;
+border: 1px solid #FF0000;
+color: #FF0000;
+border-radius: 8px;
+height: 35px;
+cursor: pointer;
+}
+#saveButton:hover {
+background: #b6040c;
+color: white;
+border: 1px solid #b6040c;
+}
 </style>
 </head>
 <body>
+<p id="z"></p>
 <button id="runnnn" onclick="hjgcghjkhgfg()">Run code</button>
 <button id="widennn" onclick="kajygbxkjyw()">Wide view</button>
 <button id="defaultnnn" onclick="kjybxdykwuydsbxryuwkeuy()">Editing view</button>
+<button id="downloadnnn" title="Download you code as an HTML file" onclick="saveFot(r.value,'download.html')"><span class="material-icons">
+download
+</span></button>
 <a href="about.html">
 <button id="sjhdgfmjwdghf">Learn more</button></a>
+
+<button id="saveButton" onclick="sendCode()" title="Save changes to your code before downloading">Save changes</button>
 <embed src="https://lb123658.github.io/Boost-HTML-Editor/updateWarning.html" id="warn">
 
 <textarea id="editor" placeholder="Write HTML here...">
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-
-</style>
-</head>
-<body>
-
-
-</body>
-</html>
 </textarea>
+
 <p id="title"><span id="haha">Boost</span> HTML Editor</p>
-<p id="z"></p>
+<input type="text" id="r">
 <script src="app.js"></script>
 <script src="jsExamples.js"></script>
-           
+<script>
+//file download
+function saveFot(textToWrite, fileNameToSaveAs)
+    {
+    	var textFileAsBlob = new Blob([textToWrite], {type:'text/html'}); 
+    	var downloadLink = document.createElement("a");
+    	downloadLink.download = fileNameToSaveAs;
+    	downloadLink.innerHTML = "Download File";
+    	if (window.webkitURL != null)
+    	{
+    		// Chrome allows the link to be clicked
+    		// without actually adding it to the DOM.
+    		downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+    	}
+    	else
+    	{
+    		// Firefox requires the link to be added to the DOM
+    		// before it can be clicked.
+    		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    		downloadLink.onclick = destroyClickedElement;
+    		downloadLink.style.display = "none";
+    		document.body.appendChild(downloadLink);
+    	}
+    
+    	downloadLink.click();
+    } 
+
+
+
+function sendCode() {
+            var x =  
+                document.getElementById("editor").value; 
+            
+            document.getElementById( 
+              "r").value = x; 
+        } 
+
+</script>    
 </body>
 </html>
