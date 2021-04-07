@@ -1,11 +1,7 @@
 //Boost HTML Editor JS Library for styling buttons
 
 function styleRed() {
-//color options
-var y = document.getElementsByClassName("blue-default");
 var x = document.getElementsByClassName("red-default");
-var z = document.getElementsByClassName("green-default");
-
 
 //red default button
   x[0].style.color = "#ff0000";
@@ -118,7 +114,7 @@ var z = document.getElementsByClassName("green-default");
   x[9].style.minWidth = "80px";
 }
 function styleBlue() {
-
+var y = document.getElementsByClassName("blue-default");
 //blue default button
   y[0].style.color = "#2160c4";
   y[0].style.cursor = "pointer";
@@ -230,6 +226,7 @@ function styleBlue() {
   y[9].style.minWidth = "80px";
 }
 function styleGreen() {
+var z = document.getElementsByClassName("green-default");  
 //green default button
   z[0].style.color = "#188038";
   z[0].style.cursor = "pointer";
