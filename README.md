@@ -6,7 +6,7 @@ Boost HTML Editor supports:
 * HTML
 * CSS
 * JavaScript (only if it is on another page, however some specific functions now work including an alert)<br>
-### <a href="https://github.com/LB123658/Boost-HTML-Editor/releases/tag/v1.5.3">Download version 1.5.3 now</a>
+### <a href="https://lb123658.github.io/Boost-HTML-Editor/download">Download version 1.5.3 now</a>
 
 # JS Library
 Paste this code to use the new JS library for adding style to buttons <br><br>
