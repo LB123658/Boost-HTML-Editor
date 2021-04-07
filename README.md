@@ -8,7 +8,7 @@ Boost HTML Editor supports:
 * JavaScript (only if it is on another page, however some specific functions now work including an alert)<br>
 ### <a href="https://lb123658.github.io/Boost-HTML-Editor/download">Download version 1.5.4 now</a>
 
-# JS Library
+# JS Library – disables
 ### --ONLY THE "RED-DEFAULT" BUTTONS ARE WORKING--
 Paste this code below to use the new JS library for adding style to buttons and add ```<body onload="styleRed(); styleBlue(); styleGreen()">``` <br><br>
 ```<script src="https://lb123658.github.io/Boost-HTML-Editor/red-default.js"></script> <script src="https://lb123658.github.io/Boost-HTML-Editor/blue-default.js"></script> <script src="https://lb123658.github.io/Boost-HTML-Editor/green-default.js"></script>``` <br><br>
