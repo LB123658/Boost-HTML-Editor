@@ -9,6 +9,7 @@ Boost HTML Editor supports:
 ### <a href="https://lb123658.github.io/Boost-HTML-Editor/download">Download version 1.5.3 now</a>
 
 # JS Library
+### --ONLY THE "RED-DEFAULT" BUTTONS ARE WORKING--
 Paste this code below to use the new JS library for adding style to buttons and add ```onload="style()"``` to the <body> tag. <br><br>
 ```<script src="https://lb123658.github.io/Boost-HTML-Editor/style-library.js"></script>``` <br><br>
 Add the class ```class="red-default"``` to a button to give it the default red style.
