@@ -2,13 +2,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Boost HTML Editor</title>
+<title id="tabName">Boost HTML Editor</title>
 <link rel='icon' href='https://drive.google.com/thumbnail?id=1_WkY6_JASgRvnWu18iIXxDwmy9asRJN4' type='image/png'/ >
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="library.css" />
-      
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">      
 <style>
 #warn {
 position: absolute;
@@ -18,7 +19,7 @@ height: 60px;
 width: 48%;           
 }
 body {
-background: white;
+background: #3f3e3e;
 }
 #editor {
 position: absolute;
@@ -26,64 +27,14 @@ top: 100px;
 left: 0px;
 width: 50%;
 height: 700px;
-background: #282828;
-color: #1DB954;
-font-famiky: courier new;
+background: #3f3e3e;
+color: #f3e3c2;
+font-family: 'Fira Code', monospace;
 font-weight: bold;
-}
-#runnnn {
-position: absolute;
-top: 60px;
-left: 0%;
-width: 15%;
-height: 40px;
 border: none;
-color: white;
-border-radius: 1px;
-background: #FF0000;
-font-size: 15px;
-font-family: futura;
-cursor: pointer;
 }
-#runnnn:hover {
-color: white;
-background: #b6040c;
-}
-#defaultnnn {
-position: absolute;
-top: 60px;
-left: 15%;
-width: 15%;
-height: 40px;
-border: none;
-color: white;
-border-radius: 1px;
-background: #FF0000;
-font-size: 15px;
-font-family: futura;
-cursor: pointer;
-}
-#defaultnnn:hover {
-color: white;
-background: #b6040c;
-}
-#widennn {
-position: absolute;
-top: 60px;
-left: 30%;
-width: 15%;
-height: 40px;
-border: none;
-color: white;
-border-radius: 1px;
-background: #FF0000;
-font-size: 15px;
-font-family: futura;
-cursor: pointer;
-}
-#widennn:hover {
-color: white;
-background: #b6040c;
+#editor::placeholder {
+color: #999999;
 }
 #z {
 position: absolute;
@@ -91,55 +42,14 @@ top: 100px;
 left: 52%;
 z-index: 1;
 width: 50%;
-height: 700px;  
-}
-#title {
-position: absolute;
-top: 0px;
-left: 0px;
-font-family: futura;
-color: #FF0000;
-font-weight: bold;
-font-size: 25px;
-cursor: default;
+height: 700px;
+background: white;
 }
 #haha {
 font-style: italic;
 }
-#sjhdgfmjwdghf {
-position: absolute;
-top: 20px;
-right: 50%;
-background: transparent;
-border: 1px solid #FF0000;
-color: #FF0000;
-border-radius: 8px;
-height: 35px;
-cursor: pointer;
-}
-#sjhdgfmjwdghf:hover {
-background: #b6040c;
-color: white;
-border: 1px solid #b6040c;
-}
-#downloadnnn {
-position: absolute;
-top: 60px;
-left: 45%;
-width: 5.5%;
-height: 40px;
-border: none;
-color: white;
-border-radius: 1px;
-background: #FF0000;
-font-size: 15px;
-font-family: futura;
-cursor: pointer;
-}
-#downloadnnn:hover {
-color: white;
-background: #b6040c;
-}
+
+
 #r {
 position: fixed;
 top: 200px;
@@ -149,44 +59,138 @@ height: 20px;
 border: none;
 background: transparent;      
 }
-#saveButton {
+#runnnn {
 position: absolute;
 top: 20px;
-left: 250px;
-background: transparent;
-border: 1px solid #FF0000;
-color: #FF0000;
-border-radius: 8px;
-height: 35px;
+left: 150px;
+background: #FFCC00;
+color: #3f3e3e;
+border: none;
+height: 50px;
+width: 100px;
+border-radius: 25px;
 cursor: pointer;
 }
-#saveButton:hover {
-background: #b6040c;
-color: white;
-border: 1px solid #b6040c;
+#runnnn:hover {
+background: orange;
+animation-name: example;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
 }
+
+
+#defaultnnn {
+position: absolute;
+top: 20px;
+left: 270px;
+background: #FFCC00;
+color: #3f3e3e;
+border: none;
+height: 50px;
+width: 100px;
+border-radius: 25px;
+cursor: pointer;
+}
+#defaultnnn:hover {
+background: orange;
+animation-name: example;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+
+#widennn {
+position: absolute;
+top: 20px;
+left: 390px;
+background: #FFCC00;
+color: #3f3e3e;
+border: none;
+height: 50px;
+width: 100px;
+border-radius: 25px;
+cursor: pointer;
+}
+#widennn:hover {
+background: orange;
+animation-name: example;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+
+#downloadnnn {
+position: absolute;
+top: 20px;
+left: 510px;
+background: #FFCC00;
+color: #3f3e3e;
+border: none;
+height: 50px;
+width: 100px;
+border-radius: 25px;
+cursor: pointer;
+}
+#downloadnnn:hover {
+background: orange;
+animation-name: example;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+
+
+#homennn {
+position: absolute;
+top: 20px;
+left: 30px;
+background: #FFCC00;
+color: #3f3e3e;
+border: none;
+height: 50px;
+width: 100px;
+border-radius: 25px;
+cursor: pointer;
+}
+#homennn:hover {
+background: orange;
+animation-name: example;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes example {
+ 
+  0% {background-color: #FFCC00;}
+  100%   {background-color: orange;}
+
+}
+
 </style>
 </head>
 <body>
 <div id="z"></div>
-<button id="runnnn" onclick="hjgcghjkhgfg(); style()">Run code</button>
-<button id="widennn" onclick="kajygbxkjyw()">Wide view</button>
-<button id="defaultnnn" onclick="kjybxdykwuydsbxryuwkeuy()">Editing view</button>
-<button id="downloadnnn" title="Download your code as an HTML file" onclick="saveFot(r.value,'download.html')"><span class="material-icons">
+<button id="runnnn" onclick="hjgcghjkhgfg(); style()" title="Run code"><span class="material-icons" style="font-size: 40px;">
+play_circle
+</span></button>
+<button id="widennn" onclick="kajygbxkjyw()" title="Wide view"><span class="material-icons" style="font-size: 40px;">
+fullscreen
+</span></button>
+<button id="defaultnnn" onclick="kjybxdykwuydsbxryuwkeuy()" title="Edit code"><span class="material-icons" style="font-size: 40px;">
+edit
+</span></button>
+<button id="downloadnnn" title="Download your code" onclick="sendCode(); saveFot(r.value,'download.html')"><span class="material-icons" style="font-size: 40px;">
 download
 </span></button>
-<a href="about.html">
-<button id="sjhdgfmjwdghf">Learn more</button></a>
 
-<button id="saveButton" onclick="sendCode()" title="Save changes to your code before downloading">Save changes</button>
+<button id="homennn" title="Boost HTML Editor homepage"><span class="material-icons" style="font-size: 40px;">
+home
+</span></button>
+
 <embed src="https://lb123658.github.io/Boost-HTML-Editor/updateWarning.html" id="warn">
 
 <textarea id="editor" placeholder="Write HTML here...">
 </textarea>
 
-<p id="title"><span id="haha">Boost</span> HTML Editor</p>
 <input type="text" id="r">
-<script src="app.js"></script>
+
+<script src="https://lb123658.github.io/Boost-HTML-Editor/app.js"></script>
 <script>
 //file download
 function saveFot(textToWrite, fileNameToSaveAs)
