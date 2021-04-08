@@ -1,0 +1,436 @@
+.red-default {
+color: #ff0000;
+cursor: pointer;
+width: 20%;
+border: 2px solid red;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.red-default:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.green-default {
+color: #188038;
+cursor: pointer;
+width: 20%;
+border: 2px solid #188038;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.green-default:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.blue-default {
+color: #346eeb;
+cursor: pointer;
+width: 20%;
+border: 2px solid #346eeb;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.blue-default:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.black-default {
+color: black;
+cursor: pointer;
+width: 20%;
+border: 2px solid black;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.black-default:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.orange-default {
+color: orange;
+cursor: pointer;
+width: 20%;
+border: 2px solid orange;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.orange-default:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.purple-default {
+color: purple;
+cursor: pointer;
+width: 20%;
+border: 2px solid purple;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.purple-default:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+
+.red-contrast {
+color: #ff0000;
+cursor: pointer;
+width: 20%;
+border: 2px solid red;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.red-contrast:hover {
+cursor: pointer;
+background: #ff0000;
+color: white;
+animation-name: red;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes red {
+ 
+  0% {background: transparent;}
+  100%   {background: #ff0000;}
+
+}
+
+.green-contrast {
+color: #188038;
+cursor: pointer;
+width: 20%;
+border: 2px solid #188038;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.green-contrast:hover {
+cursor: pointer;
+background: #188038;
+color: white;
+animation-name: green;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes green {
+ 
+  0% {background: transparent;}
+  100%   {background: #188038;}
+
+}
+
+.blue-contrast {
+color: #346eeb;
+cursor: pointer;
+width: 20%;
+border: 2px solid #346eeb;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.blue-contrast:hover {
+cursor: pointer;
+background: #346eeb;
+color: white;
+animation-name: blue;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes blue {
+ 
+  0% {background: transparent;}
+  100%   {background: #346eeb;}
+
+}
+
+.black-contrast {
+color: black;
+cursor: pointer;
+width: 20%;
+border: 2px solid black;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.black-contrast:hover {
+cursor: pointer;
+background: black;
+color: white;
+animation-name: black;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes black {
+ 
+  0% {background: transparent;}
+  100%   {background: black;}
+
+}
+
+.orange-contrast {
+color: orange;
+cursor: pointer;
+width: 20%;
+border: 2px solid orange;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.orange-contrast:hover {
+cursor: pointer;
+background: orange;
+color: white;
+animation-name: orange;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes orange {
+ 
+  0% {background: transparent;}
+  100%   {background: orange;}
+}
+
+.purple-contrast {
+color: purple;
+cursor: pointer;
+width: 20%;
+border: 2px solid purple;
+border-radius: 7px;
+height: 50px;
+background: transparent;
+font-size: 18px;
+min-width: 80px;
+}
+.purple-contrast:hover {
+cursor: pointer;
+background: purple;
+color: white;
+animation-name: purple;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes purple {
+ 
+  0% {background: transparent;}
+  100%   {background: purple;}
+}
+
+.red-social {
+color: white;
+cursor: pointer;
+width: 20%;
+border: 2px solid red;
+border-radius: 25px;
+height: 50px;
+background: #ff0000;
+font-size: 18px;
+min-width: 80px;
+}
+.red-social:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+
+.green-social {
+color: white;
+cursor: pointer;
+width: 20%;
+border: 2px solid #188038;
+border-radius: 25px;
+height: 50px;
+background: #188038;
+font-size: 18px;
+min-width: 80px;
+}
+.green-social:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.blue-social {
+color: white;
+cursor: pointer;
+width: 20%;
+border: 2px solid #346eeb;
+border-radius: 25px;
+height: 50px;
+background: #346eeb;
+font-size: 18px;
+min-width: 80px;
+}
+.blue-social:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.black-social {
+color: white;
+cursor: pointer;
+width: 20%;
+border: 2px solid black;
+border-radius: 25px;
+height: 50px;
+background: black;
+font-size: 18px;
+min-width: 80px;
+}
+.black-social:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.orange-social {
+color: white;
+cursor: pointer;
+width: 20%;
+border: 2px solid orange;
+border-radius: 25px;
+height: 50px;
+background: orange;
+font-size: 18px;
+min-width: 80px;
+}
+.orange-social:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+.purple-social {
+color: white;
+cursor: pointer;
+width: 20%;
+border: 2px solid purple;
+border-radius: 25px;
+height: 50px;
+background: purple;
+font-size: 18px;
+min-width: 80px;
+}
+.purple-social:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+
+.red-old {
+background-color: #188038; 
+background-image: linear-gradient(#ff0000, #fa7f7f);
+height: 50px;
+width: 20%;
+min-width: 80px;
+font-size: 18px;
+border-radius: 3px;
+border: none;
+color: white;
+}
+.red-old:hover {
+cursor: pointer;
+background-image: linear-gradient(#fa7f7f, #ff0000);
+}
+
+.green-old {
+background-color: #188038; 
+background-image: linear-gradient(#188038, #4dc974);
+height: 50px;
+width: 20%;
+min-width: 80px;
+font-size: 18px;
+border-radius: 3px;
+border: none;
+color: white;
+}
+.green-old:hover {
+cursor: pointer;
+background-image: linear-gradient(#4dc974, #188038);
+}
+
+.blue-old {
+background-color: #346eeb; 
+background-image: linear-gradient(#346eeb, #97b7fc);
+height: 50px;
+width: 20%;
+min-width: 80px;
+font-size: 18px;
+border-radius: 3px;
+border: none;
+color: white;
+}
+.blue-old:hover {
+cursor: pointer;
+background-color: #346eeb; 
+background-image: linear-gradient(#97b7fc, #346eeb);
+}
+
+.black-old {
+background-color: black; 
+background-image: linear-gradient(black, grey);
+height: 50px;
+width: 20%;
+min-width: 80px;
+font-size: 18px;
+border-radius: 3px;
+border: none;
+color: white;
+}
+.black-old:hover {
+cursor: pointer;
+background-color: #346eeb; 
+background-image: linear-gradient(grey, black);
+}
+
+.orange-old {
+background-color: orange; 
+background-image: linear-gradient(orange, #ffd599);
+height: 50px;
+width: 20%;
+min-width: 80px;
+font-size: 18px;
+border-radius: 3px;
+border: none;
+color: white;
+}
+.orange-old:hover {
+cursor: pointer;
+background-color: orange; 
+background-image: linear-gradient(#ffd599, orange);
+}
+
+.purple-old {
+background-color: orange; 
+background-image: linear-gradient(purple, #ff66ff);
+height: 50px;
+width: 20%;
+min-width: 80px;
+font-size: 18px;
+border-radius: 3px;
+border: none;
+color: white;
+}
+.purple-old:hover {
+cursor: pointer;
+background-color: orange; 
+background-image: linear-gradient(#ff66ff, purple);
+}
