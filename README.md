@@ -6,7 +6,7 @@ Boost HTML Editor supports:
 * HTML
 * CSS
 * JavaScript (only if it is on another page, however some specific functions now work including an alert)<br>
-### <a href="https://lb123658.github.io/Boost-HTML-Editor/download">Download version 1.5.5 now</a>
+### <a href="https://lb123658.github.io/Boost-HTML-Editor/download">Download version 1.5.6 now</a>
 
 # CSS Library 
 Built in CSS that makes Boost HTML Editor even easier.
