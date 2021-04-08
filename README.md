@@ -8,9 +8,30 @@ Boost HTML Editor supports:
 * JavaScript (only if it is on another page, however some specific functions now work including an alert)<br>
 ### <a href="https://lb123658.github.io/Boost-HTML-Editor/download">Download version 1.5.4 now</a>
 
-# JS Library – disabled
-### --ONLY THE "RED-DEFAULT" BUTTONS ARE WORKING--
-Paste this code below to use the new JS library for adding style to buttons and add ```<body onload="styleRed(); styleBlue(); styleGreen()">``` <br><br>
-```<script src="https://lb123658.github.io/Boost-HTML-Editor/red-default.js"></script> <script src="https://lb123658.github.io/Boost-HTML-Editor/blue-default.js"></script> <script src="https://lb123658.github.io/Boost-HTML-Editor/green-default.js"></script>``` <br><br>
-Add the class ```class="red-default"``` to a button to give it the default red style.
-```class="blue-default"``` or ```class="green-default``` give you other colors.
+# CSS Library 
+Built in CSS that makes Boost HTML Editor even easier.
+* How to use:
+```<link rel="stylesheet" type="text/css" href="https://lb123658.github.io/Boost-HTML-Editor/library.css" />```<br><br>
+Use the code above in the ```<head>``` section to use the CSS library.<br>
+Add a specific class to the buttons you want to style to access library.<br>
+* Classes
+```class="red-default"```<br>
+```class="green-default"```<br>
+```class="blue-default"```<br>
+```class="black-default"```<br>
+```class="orange-default"```<br>
+```class="purple-default"```<br><br>
+```class="red-contrast"```<br>
+```class="green-contrast"```<br>
+```class="blue-contrast"```<br>
+```class="black-contrast"```<br>
+```class="orange-contrast"```<br>
+```class="purple-contrast"```<br><br>
+```class="red-social"```<br>
+```class="green-social"```<br>
+```class="blue-social"```<br>
+```class="black-social"```<br>
+```class="orange-social"```<br>
+```class="purple-social"```<br>
+
+
