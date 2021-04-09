@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -160,12 +161,28 @@ animation-name: example;
   100%   {background-color: orange;}
 
 }
-
+#progress {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 1px;
+width: 0px;
+background: #FFCC00;
+border: none;
+visibility: hidden;
+}
+@keyframes load {
+  0% {width: 0px;}
+  50%   {width: 100%;}
+  51%   {width: 100%; visibility: hidden;}
+  100%  {width: 0px; visibility: hidden;}
+}
 </style>
 </head>
 <body>
 <div id="z"></div>
-<button id="runnnn" onclick="hjgcghjkhgfg(); style()" title="Run code"><span class="material-icons" style="font-size: 40px;">
+<button id="runnnn" onclick="hjgcghjkhgfg()" title="Run code"><span class="material-icons" style="font-size: 40px;">
 play_circle
 </span></button>
 <button id="widennn" onclick="kajygbxkjyw()" title="Wide view"><span class="material-icons" style="font-size: 40px;">
@@ -174,7 +191,7 @@ fullscreen
 <button id="defaultnnn" onclick="kjybxdykwuydsbxryuwkeuy()" title="Edit code"><span class="material-icons" style="font-size: 40px;">
 edit
 </span></button>
-<button id="downloadnnn" title="Download your code" onclick="sendCode(); saveFot(r.value,'download.html')"><span class="material-icons" style="font-size: 40px;">
+<button id="downloadnnn" title="Download your code" onclick="progress(); sendCode(); saveFot(r.value,'download.html')"><span class="material-icons" style="font-size: 40px;">
 download
 </span></button>
 <a href="https://lb123658.github.io/Boost-HTML-Editor/about" target="_blank">
@@ -188,6 +205,8 @@ home
 </textarea>
 
 <input type="text" id="r">
+
+<button id="progress"></button>
 
 <script src="https://lb123658.github.io/Boost-HTML-Editor/app.js"></script>
 <script>
@@ -226,7 +245,12 @@ function sendCode() {
             document.getElementById( 
               "r").value = x; 
         } 
-
+function progress() {
+document.getElementById("progress").style.visibility = "visible";
+document.getElementById("progress").style.animationName = "load";
+document.getElementById("progress").style.animationDuration = "2.0s";
+setTimeout(function(){ alert("Successfully downloaded file."); }, 3000);
+}
 </script>    
 </body>
 </html>
