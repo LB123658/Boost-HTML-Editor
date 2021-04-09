@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="Description" content="Never be fotless again. Explore a wide selection of Fots, recipes, and more." />
+   <meta name="Description" content="A 100% free, online HTML and CSS editor that lets you download your files and preview them as websites." />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <title>Boost HTML Editor download</title>
@@ -162,14 +163,33 @@ pointer-events: none;
     transform: rotate(0deg);
   }
 }
+#progress {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 2px;
+width: 0px;
+background: #3f3e3e;
+border: none;
+visibility: hidden;
+z-index: 2;
+}
+@keyframes load {
+  0% {width: 0px;}
+  50%   {width: 100%;}
+  51%   {width: 100%; visibility: hidden;}
+  100%  {width: 0px; visibility: hidden;}
+}
 </style>
 </head>
 <body>
 <div id="top">
+<button id="progress"></button>
 <p id="title">Download the Boost HTML Editor source code</p>
 </div>
-<a href="https://lb123658.github.io/Boost-HTML-Editor/" download>
-<button id="download"> Download</button></a>
+<a name="https://lb123658.github.io/Boost-HTML-Editor/" download>
+<button id="download" onclick="progress()"> Download</button></a>
 <a href="https://lb123658.github.io/Boost-HTML-Editor/">
 <button class="download" id="right">Web version</button></a>
 <p id="amount">Boost HTML Editor for macOS • 5KB download</p>
@@ -187,6 +207,13 @@ pointer-events: none;
 
 <img src="https://lb123658.github.io/Boost-HTML-Editor/images/blue-arc.png" id="blueArc2"/>
 </div>   
-
+<script>
+function progress() {
+document.getElementById("progress").style.visibility = "visible";
+document.getElementById("progress").style.animationName = "load";
+document.getElementById("progress").style.animationDuration = "2.0s";
+setTimeout(function(){ document.getElementById("title").innerHTML = "Successfully downloaded file"; }, 3000);
+}
+</script>
 </body>
 </html>
