@@ -13,9 +13,9 @@ font-family: 'Ubuntu', sans-serif;
 }
 #title {
 position: absolute;
-top: -10px;
+top: 0px;
 left: 10px;
-color: white;
+color: #3f3e3e;
 user-select: none;
 font-size: 30px;
 }
@@ -25,20 +25,21 @@ top: 0px;
 left: 0px;
 width: 100%;
 height: 100px;
-background: #dc1b1b;
+background: #ffc000;
 }
 .download {
-background: #dc1b1b;
+background: transparent;
 height: 70px;
 width: 200px;
 border-radius: 7px;
-color: white;
-border: 1px solid #dc1b1b;
+color: #ffd152;
+border: 1px solid #ffd152;
 cursor: pointer;
 font-size: 23px;
 }
 .download:hover {
-opacity: 0.8;
+border: 1px solid #ffc000;
+color: #ffc000;
 }
 #left {
 position: absolute;
@@ -49,8 +50,6 @@ right: 51%;
 position: absolute;
 top: 50%;
 left: 51%;
-background: transparent;
-color: #dc1b1b;
 }
 #amount {
 position: absolute;
@@ -61,7 +60,7 @@ width: 100%;
 user-select: none;
 cursor: default;
 font-size: 15px;
-color: white;   
+color: #ffc000;   
 }
 #img {
 position: absolute;
@@ -72,13 +71,13 @@ min-height: 100%;
 z-index: -1;
 opacity: 0.4;
 }
-#galaxy {
+#redArc {
 position: fixed;
 top: -170px;
 left: 0px;
 width: 100%;
 pointer-events: none;
-  animation: rotation 160s infinite linear;  
+  animation: rotation 40s infinite linear;  
 }
 
 @keyframes rotation {
@@ -95,9 +94,74 @@ top: 0px;
 left: 0px;
 width: 100%;
 height: 100%;
-background: black;
+background: #3f3e3e;
 z-index: -1;   
 }   
+#download {
+background: #ffd152;
+height: 70px;
+width: 200px;
+border-radius: 7px;
+color: #3f3e3e;
+border: 1px solid #ffd152;
+cursor: pointer;
+font-size: 23px;
+position: absolute;
+top: 50%;
+right: 51%;  
+}
+#download:hover {
+background: #ffc000;
+}
+#yellowArc {
+position: fixed;
+bottom: 52%;
+left: 30%;
+width: 40%;
+pointer-events: none;
+animation: rotation 40s infinite linear;  
+}
+#blueArc {
+position: fixed;
+top: 20%;
+left: 20%;
+width: 60%;
+pointer-events: none;
+animation: rotation 20s infinite linear;  
+}
+
+#yellowArc2 {
+position: fixed;
+bottom: 20%;
+left: 35%;
+width: 30%;
+pointer-events: none;
+animation: rotation 30s infinite linear;  
+}
+#redArc2 {
+position: fixed;
+top: 10%;
+left: 10%;
+width: 80%;
+pointer-events: none;
+animation: rotationl 80s infinite linear;  
+}
+#blueArc2 {
+position: fixed;
+top: -170px;
+left: 0px;
+width: 100%;
+pointer-events: none;
+  animation: rotationl 60s infinite linear;  
+}
+@keyframes rotationl {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 </style>
 </head>
 <body>
@@ -105,13 +169,24 @@ z-index: -1;
 <p id="title">Download the Boost HTML Editor source code</p>
 </div>
 <a href="https://lb123658.github.io/Boost-HTML-Editor/" download>
-<button class="download" id="left"> Download</button></a>
+<button id="download"> Download</button></a>
 <a href="https://lb123658.github.io/Boost-HTML-Editor/">
 <button class="download" id="right">Web version</button></a>
-<p id="amount">Boost HTML Editor for macOS • 108KB download</p>
+<p id="amount">Boost HTML Editor for macOS• 5KB download</p>
 
 <div id="space">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Milky_Way_Galaxy_%28black_background%29.png/1024px-Milky_Way_Galaxy_%28black_background%29.png" id="galaxy"/>
+<img src="https://lb123658.github.io/Boost-HTML-Editor/images/red-arc.png" id="redArc"/>
+
+<img src="https://lb123658.github.io/Boost-HTML-Editor/images/yellow-arc.png" id="yellowArc"/>
+
+<img src="https://lb123658.github.io/Boost-HTML-Editor/images/blue-arc.png" id="blueArc"/>
+
+<img src="https://lb123658.github.io/Boost-HTML-Editor/images/red-arc.png" id="redArc2"/>
+
+<img src="https://lb123658.github.io/Boost-HTML-Editor/images/yellow-arc.png" id="yellowArc2"/>
+
+<img src="https://lb123658.github.io/Boost-HTML-Editor/images/blue-arc.png" id="blueArc2"/>
 </div>   
+
 </body>
 </html>
