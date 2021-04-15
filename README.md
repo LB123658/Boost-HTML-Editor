@@ -4,6 +4,7 @@ Edit HTML and create websites. <b>Now with CSS library</b>
 ### <a href="https://lb123658.github.io/Boost-HTML-Editor/about">Get Started</a><br>
 Boost HTML Editor supports:
 * HTML
+* SVG
 * CSS
 * JavaScript (only if it is on another page, however some specific functions now work including an alert)<br>
 ### <a href="https://lb123658.github.io/Boost-HTML-Editor/download">Download</a>
