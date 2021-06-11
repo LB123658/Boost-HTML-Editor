@@ -12,6 +12,8 @@ tab.innerHTML = title;
 } else {
 tab.innerHTML = "Boost HTML Editor";
 } 
+document.body.style.background = "#282828";
+}
 
 function kajygbxkjyw() { 
      document.getElementById("editor").style.visibility="hidden";
