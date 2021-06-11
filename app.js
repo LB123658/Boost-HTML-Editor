@@ -1,4 +1,4 @@
-var tab = document.getElementById("tabName").innerHTML;
+var tab = document.getElementById("tabName");
 var title = document.getElementById("editor").value.split("<title>"[1].split("</title>")[0];
 function hjgcghjkhgfg() { 
 var x =  
@@ -8,7 +8,8 @@ var x =
               "z").innerHTML = x; 
 localStorage.setItem("code", document.getElementById("editor").value);
 if (title.length > 0) {
-tab = title;
+tab.innerHTML = title;
+}
 } 
 
 function kajygbxkjyw() { 
