@@ -17,3 +17,4 @@ function kjybxdykwuydsbxryuwkeuy() {
      document.getElementById("z").style.width="50%"; 
      document.getElementById("z").style.left="52%"; 
 }
+document.getElementById("editor").value = localStorage.getItem("code");
