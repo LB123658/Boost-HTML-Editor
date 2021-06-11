@@ -4,7 +4,8 @@ var x =
             
             document.getElementById( 
               "z").innerHTML = x; 
-        } 
+localStorage.setItem("code", document.getElementById("editor").value);
+} 
 
 function kajygbxkjyw() { 
      document.getElementById("editor").style.visibility="hidden";
