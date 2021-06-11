@@ -1,5 +1,5 @@
 var tab = document.getElementById("tabName");
-var title = document.getElementById("editor").value.split("<title>")[1].split("</title>")[0];
+var title = localStorage.getItem("code").split("<title>")[1].split("</title>")[0];
 function hjgcghjkhgfg() { 
 var x =  
             document.getElementById("editor").value; 
@@ -9,7 +9,8 @@ var x =
 localStorage.setItem("code", document.getElementById("editor").value);
 if (title.length > 0) {
 tab.innerHTML = title;
-}
+} else {
+tab.innerHTML = "Boost HTML Editor";
 } 
 
 function kajygbxkjyw() { 
