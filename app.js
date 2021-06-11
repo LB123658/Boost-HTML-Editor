@@ -1,17 +1,15 @@
 var tab = document.getElementById("tabName");
 var title = localStorage.getItem("code").split("<title>")[1].split("</title>")[0];
-function hjgcghjkhgfg() { 
-var x =  
-            document.getElementById("editor").value; 
-            
-            document.getElementById( 
-              "z").innerHTML = x; 
-localStorage.setItem("code", document.getElementById("editor").value);
 if (title.length > 0) {
 tab.innerHTML = title;
 } else {
 tab.innerHTML = "Boost HTML Editor";
 } 
+
+function hjgcghjkhgfg() { 
+var x =  document.getElementById("editor").value; 
+document.getElementById("z").innerHTML = x; 
+localStorage.setItem("code", document.getElementById("editor").value);
 document.body.style.background = "#282828";
 }
 
