@@ -177,17 +177,38 @@ visibility: hidden;
   51%   {width: 100%; visibility: hidden;}
   100%  {width: 0px; visibility: hidden;}
 }
+textarea:focus {
+outline-width: 0px;
+}
+#windownnn {
+position: absolute;
+top: 20px;
+left: 630px;
+background: #FFCC00;
+color: #3f3e3e;
+border: none;
+height: 50px;
+width: 100px;
+border-radius: 25px;
+cursor: pointer;
+}
+#windownnn:hover {
+background: orange;
+animation-name: example;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
 </style>
 </head>
 <body>
 <div id="z"></div>
-<button id="runnnn" onclick="hjgcghjkhgfg()" title="Run code"><span class="material-icons" style="font-size: 40px;">
+<button id="runnnn" onclick="hjgcghjkhgfg(); progress()" title="Run code"><span class="material-icons" style="font-size: 40px;">
 play_circle
 </span></button>
-<button id="widennn" onclick="kajygbxkjyw()" title="Wide view"><span class="material-icons" style="font-size: 40px;">
+<button id="widennn" onclick="kajygbxkjyw(); progress()" title="Wide view"><span class="material-icons" style="font-size: 40px;">
 fullscreen
 </span></button>
-<button id="defaultnnn" onclick="kjybxdykwuydsbxryuwkeuy()" title="Edit code"><span class="material-icons" style="font-size: 40px;">
+<button id="defaultnnn" onclick="kjybxdykwuydsbxryuwkeuy(); progress()" title="Edit code"><span class="material-icons" style="font-size: 40px;">
 edit
 </span></button>
 <button id="downloadnnn" title="Download your code" onclick="progress(); sendCode(); saveFot(r.value,'download.html')"><span class="material-icons" style="font-size: 40px;">
@@ -196,12 +217,11 @@ download
 <a href="https://lb123658.github.io/Boost-HTML-Editor/about" target="_blank">
 <button id="homennn" title="Boost HTML Editor homepage"><span class="material-icons" style="font-size: 40px;">
 home
-</span></button>
-      </a>
-<embed src="https://lb123658.github.io/Boost-HTML-Editor/updateWarning.html" id="warn">
+</span></button></a>
 
-<textarea id="editor" placeholder="Write HTML here...">
-</textarea>
+<button id="windownnn" title="Preview code" onclick="openWin(); progress()"><span class="material-icons" style="font-size: 40px;">launch</span></button>
+
+<textarea id="editor" placeholder="Write HTML here..."></textarea>
 
 <input type="text" id="r">
 
@@ -248,7 +268,11 @@ function progress() {
 document.getElementById("progress").style.visibility = "visible";
 document.getElementById("progress").style.animationName = "load";
 document.getElementById("progress").style.animationDuration = "2.0s";
-setTimeout(function(){ alert("Successfully downloaded file."); }, 3000);
+setTimeout(function(){document.getElementById("progress").style.visibility = "hidden"; document.getElementById("progress").style.animationName = ""; document.getElementById("progress").style.animationDuration = "0s";}, 2000);
+}
+function openWin() {
+  myWindow = window.open("myWindow");
+  myWindow.document.write(document.getElementById("editor").value);
 }
 </script>    
 </body>
