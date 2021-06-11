@@ -1,5 +1,5 @@
 var tab = document.getElementById("tabName");
-var title = document.getElementById("editor").value.split("<title>"[1].split("</title>")[0];
+var title = document.getElementById("editor").value.split("<title>")[1].split("</title>")[0];
 function hjgcghjkhgfg() { 
 var x =  
             document.getElementById("editor").value; 
