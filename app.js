@@ -10,7 +10,7 @@ function hjgcghjkhgfg() {
 var x =  document.getElementById("editor").value; 
 document.getElementById("z").innerHTML = x; 
 localStorage.setItem("code", document.getElementById("editor").value);
-document.body.style.background = "#282828";
+document.body.style.background = "#3f3e3e";
 }
 
 function kajygbxkjyw() { 
